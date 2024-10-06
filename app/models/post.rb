@@ -3,4 +3,6 @@ class Post < ApplicationRecord
   validates :link, length: { minimum: 5 }, presence: true
 
   belongs_to :user
+
+  has_many :comments
 end
